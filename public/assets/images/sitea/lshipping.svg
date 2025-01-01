@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.15;fill:none;stroke:#4D7FBF;stroke-width:2.2578;stroke-miterlimit:10;}
+	.st1{fill:#C1AB91;}
+	.st2{opacity:0.29;fill:#4D7FBF;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#E8E7E7;}
+	.st5{fill:#4D7FBF;}
+	.st6{fill:none;stroke:#CFD2D3;stroke-width:2.0176;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="125" cy="125" r="122.5"/>
+	<path class="st1" d="M163.2,137.6H91.1c-0.6,0-1-0.5-1-1.2V76.3c0-0.6,0.5-1.2,1-1.2h72.1c0.6,0,1,0.5,1,1.2v60.2
+		C164.3,137.1,163.8,137.6,163.2,137.6"/>
+	<path class="st2" d="M142.5,163.2c0,6.4-5.2,11.7-11.7,11.7c-6.4,0-11.7-5.2-11.7-11.7c0-6.4,5.2-11.7,11.7-11.7
+		C137.3,151.5,142.5,156.8,142.5,163.2"/>
+	<path class="st3" d="M137.4,163.2c0,3.6-2.9,6.6-6.6,6.6c-3.6,0-6.6-2.9-6.6-6.6c0-3.6,2.9-6.6,6.6-6.6
+		C134.5,156.6,137.4,159.6,137.4,163.2"/>
+	<rect x="90.1" y="110.2" class="st4" width="74.2" height="5.6"/>
+	<path class="st5" d="M90.1,143.8v14.1v1.2v2.3h0.6h1.1h25c1.3-7.3,7.1-12.7,14-12.7s12.7,5.5,14,12.7h33.6
+		c1.3-7.3,7.1-12.7,14-12.7s12.7,5.5,14,12.7h11.9V119l-20.6-31h-25.7h-2.5v55.8H90.1z"/>
+	<line class="st6" x1="31.6" y1="160.5" x2="74.5" y2="160.5"/>
+	<line class="st6" x1="43.1" y1="139.3" x2="74.5" y2="139.3"/>
+	<line class="st6" x1="58.8" y1="120.2" x2="74.5" y2="120.2"/>
+	<path class="st2" d="M204.2,163.2c0,6.4-5.2,11.7-11.7,11.7c-6.4,0-11.7-5.2-11.7-11.7c0-6.4,5.2-11.7,11.7-11.7
+		C198.9,151.5,204.2,156.8,204.2,163.2"/>
+	<path class="st3" d="M199.5,163.2c0,3.6-2.9,6.6-6.6,6.6c-3.6,0-6.6-2.9-6.6-6.6c0-3.6,2.9-6.6,6.6-6.6
+		C196.6,156.6,199.5,159.6,199.5,163.2"/>
+	<path class="st3" d="M206.6,115.8l-10.7-17.3h-16.5v17.3C179.4,115.8,206.1,115.3,206.6,115.8"/>
+</g>
+</svg>

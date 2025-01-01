@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CACACA;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#959595;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st4{fill:#EB2B2F;}
+	.st5{fill:#ECD015;}
+	.st6{fill:#3BB14A;}
+	.st7{fill:#B9C9D1;}
+	.st8{fill:#4B7EB9;}
+</style>
+<g>
+	<g id="XMLID_2_">
+		<g>
+			<path class="st0" d="M4,24V12.3c0-0.8,0.7-1.5,1.5-1.5h88.9c0.8,0,1.5,0.7,1.5,1.5V24H4.2H4z"/>
+			<path class="st1" d="M4,87.7V24h0.2H96v63.7c0,0.8-0.7,1.5-1.5,1.5H5.5C4.7,89.2,4,88.5,4,87.7z"/>
+		</g>
+		<g>
+			<path class="st2" d="M96,24v63.7c0,0.8-0.7,1.5-1.5,1.5H5.5c-0.8,0-1.5-0.7-1.5-1.5V24V12.3c0-0.8,0.7-1.5,1.5-1.5h88.9
+				c0.8,0,1.5,0.7,1.5,1.5V24z"/>
+			<polyline class="st2" points="4.2,24 96,24 96,24 			"/>
+		</g>
+	</g>
+	<path class="st3" d="M84.6,19.1H44c-0.9,0-1.6-0.7-1.6-1.6S43.2,16,44,16h40.6c0.9,0,1.6,0.7,1.6,1.6S85.5,19.1,84.6,19.1z"/>
+	<ellipse class="st4" cx="13" cy="17.6" rx="1.8" ry="1.8"/>
+	<ellipse class="st5" cx="19.9" cy="17.6" rx="1.8" ry="1.8"/>
+	<ellipse class="st6" cx="26.2" cy="17.6" rx="1.8" ry="1.8"/>
+	<g>
+		<rect x="6.3" y="26.2" class="st7" width="13.7" height="2.3"/>
+		<rect x="24.3" y="26.2" class="st7" width="13.7" height="2.3"/>
+		<rect x="43.7" y="26.2" class="st7" width="13.7" height="2.3"/>
+		<rect x="61.7" y="26.2" class="st7" width="13.7" height="2.3"/>
+		<rect x="79.9" y="26.2" class="st7" width="13.7" height="2.3"/>
+	</g>
+	<g>
+		<polygon class="st1" points="27.7,46.8 27.7,46.8 27.7,46.8 		"/>
+	</g>
+	<g>
+		<polygon class="st1" points="27.7,46.8 27.7,46.8 27.7,46.8 		"/>
+	</g>
+	<g>
+		<polygon class="st1" points="27.7,46.8 27.7,46.8 27.7,46.8 		"/>
+	</g>
+	<g>
+		<ellipse class="st1" cx="25.2" cy="48.1" rx="0.2" ry="0.2"/>
+		<ellipse class="st1" cx="25.2" cy="49.1" rx="0.2" ry="0.2"/>
+		<ellipse class="st1" cx="25.2" cy="50.1" rx="0.2" ry="0.2"/>
+	</g>
+	<g>
+		<ellipse class="st1" cx="50" cy="50" rx="9" ry="9"/>
+		<path class="st8" d="M58.2,46.4c-1.8,0-3.2,1.4-3.2,3.2v4.8h-1.8v-4.8c0-0.8-0.3-1.6-0.9-2.3c-0.6-0.6-1.4-0.9-2.3-0.9
+			c-1.8,0-3.2,1.4-3.2,3.2v4.8H45v-4.8c0-2.7,2.2-5,5-5c1.3,0,2.6,0.5,3.5,1.5c0.2,0.2,0.4,0.4,0.6,0.7c0.7-1.1,1.9-1.8,3.2-2.1
+			C55.7,42.5,53,41,50,41c-5,0-9,4-9,9s4,9,9,9s9-4,9-9C59,48.7,58.7,47.5,58.2,46.4C58.2,46.4,58.2,46.4,58.2,46.4z"/>
+	</g>
+</g>
+</svg>

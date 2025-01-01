@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+}
+
+header p {
+    font-size: 12px !important;
+    color: #828D9E !important;
+}
+
+footer p {
+    font-size: 12px !important;
+    color: #828D9E !important;
+}
+
+footer ul li a {
+    color: #828D9E !important;
+}
+
+footer ul li:hover a {
+    color: #4D7FB8 !important;
+}
+
+footer h3 {
+    font-size: 12px !important;
+}
+
+p {
+    color: #39393B !important;
+    font-size: 16px !important;
+}
+
+/* Sub Heading */
+header h2 {
+    font-size: 14px !important;
+}
+
+h2 {
+    font-size: 24px !important;
+}
+
+.image-box p {
+    font-size: 14px !important;
+    color: #828D9E !important;
+}
+
+.head-box p {
+    font-size: 16px !important;
+    color: #828D9E !important;
+}
+
+.box p {
+    font-size: 14px !important;
+    color: #828D9E !important;
+}
+
+.image-box h2 {
+    font-size: 16px !important;
+}
+
+.copyright {
+    border-top: 0.5px solid #9999998f;
+}
+
+.search-bar input {
+    background-color: rgba(250, 250, 250, 0.73);
+}
+
+input {
+    outline: none !important;
+}
+
+/*------------------- Mobile Menu -------------------*/
+#mobile_menu {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: -120%;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+}
+
+.show_menu {
+    top: 0 !important;
+    height: 100% !important;
+}
+
+/*------------------- Account -------------------*/
+#account_dropdown_menu {
+    top: 47px;
+    right: 10%;
+    width: 315px;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.show-account-dropdown-menu {
+    visibility: visible !important;
+    height: 215px !important;
+}
+
+/* ------------------- Modal --------------------- */
+.rounded-lg .border-b {
+    align-items: center !important;
+}
+
+.rounded-lg button {
+    outline: none !important;
+}
+
+/* --------------------- Register Form ----------------------------*/
+.register_form input {
+    outline: none !important;
+    border: 1px solid #a1a1a1db;
+    background: #fafafaba !important;
+    color: #39393B !important;
+}
+
+.register_form textarea {
+    color: #39393B !important;
+}
+
+.register_form .valid_input {
+    border: 1px solid red;
+}
+
+.register_form input:focus {
+    outline: none !important;
+}
+
+.submit_form input:focus {
+    outline: none !important;
+}
+
+.submit_form input {
+    background-color: rgba(250, 250, 250, 0.73);
+    color: black;
+}
+
+.submit_form textarea {
+    color: black;
+    outline: none !important;
+    box-shadow: none !important;
+    background: rgba(250, 250, 250, 0.73);
+}
+
+textarea {
+    color: #39393B !important;
+    border: 1px solid #a1a1a1db;
+    outline: none !important;
+    box-shadow: none !important;
+    background: rgba(250, 250, 250, 0.73);
+}
+
+.register_form input[type=email]:focus {
+    outline: none !important;
+    border: 0.5px solid red;
+}
+
+/* ---------- Sidebar -------------- */
+#logo-sidebar ul li a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*------------------- Account -------------------*/
+#account_da_dropdown_menu {
+    top: 47px;
+    right: 10%;
+    width: 315px;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.show-account-da-dropdown-menu {
+    visibility: visible !important;
+    height: 170px !important;
+}
+
+/*------------ Modal ------------ */
+.modal_body input {
+    outline: none !important;
+    border: 1px solid #a1a1a1db;
+    background: #fafafaba;
+    color: #39393B !important;
+}
+
+.modal_body select {
+    border: 1px solid rgba(161, 161, 161, 0.86);
+    color: #39393B !important;
+}
+
+.modal_cntrl .max-w-lg {
+    border-radius: 10px !important;
+}
+
+/* ---------- Select Box Design ----------- */
+.select-option {
+    position: relative;
+}
+
+.select-option input {
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.73);
+    border: 1px solid lightgray;
+    color: #000;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 15px;
+    outline: 0 !important;
+}
+
+.select-option:after {
+    content: "";
+    border-top: 8px solid #808080FF;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+/* ---------- Country Select Box Design ----------- */
+/*.country-select-option {*/
+/*    position: relative;*/
+/*}*/
+
+.country-select-option input {
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.73);
+    border: 1px solid lightgray;
+    color: #000;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 15px;
+    outline: 0 !important;
+}
+
+.country-select-option:after {
+    content: "";
+    border-top: 8px solid #808080FF;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.country-select-wrapper {
+    position: relative;
+}
+
+.country_content {
+    position: absolute;
+    background: white;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 2px); /* Adjust according to your border width */
+    max-width: 100%; /* Ensures it doesn't overflow its container */
+    z-index: 1; /* Ensures it appears above other elements */
+}
+
+.info-content {
+    background-color: white;
+    border: 1px solid lightgray;
+    position: absolute;
+    color: black;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 29%;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+.options {
+    /*max-width: 50px;*/
+    max-height: 100px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.options li {
+    padding: 3px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.options li:hover {
+    background: #4D7FB8;
+    color: white;
+}
+
+.gender_content {
+    width: 90%;
+}
+
+.info-question {
+    background-color: white;
+    border: 1px solid lightgray;
+    position: absolute;
+    color: black;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+/*---------- Job Page Design ----------------*/
+.search-job input {
+    background-color: rgba(250, 250, 250, 0.73);
+}
+
+#checkbox input {
+    color: #4D7FB8 !important;
+}
+
+#checkbox input:focus {
+    outline: 0 !important;
+    border: 0 !important;
+    --tw-ring-opacity: 0 !important;
+}
+
+#job_filter {
+    border: 0 !important;
+    outline: 0 !important;
+    --tw-ring-opacity: 0 !important;
+}
+
+/*----------------- User Details Page Design ----------------- */
+#radio_box input {
+    color: #4D7FB8 !important;
+}
+
+#radio_box input:focus {
+    outline: 0 !important;
+    border: 0 !important;
+    --tw-ring-opacity: 0 !important;
+}
+
+/*------------------ Hiring Page Design ----------------------*/
+#hiring-section .bimage_wrap {
+    position: relative;
+}
+
+#hiring-section .bimage_wrap::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 115%;
+    width: 25%;
+    height: 2px;
+    border-top: 3px dotted #ccc;
+}
+
+#hiring-section .last-bimage-wrap::before {
+    border: none;
+}
+
+.swiper {
+    padding-bottom: 40px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+/*--------------------- Blog page design ----------------*/
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-size: 15px !important;
+    background: white !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-prev:after {
+    font-size: 15px !important;
+    background: white !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.active_blog_tab {
+    font-size: 14px !important;
+    color: black !important;
+}
+
+/*-------------------- For hover Effect -------------------------*/
+* {
+    transition: all 0.3s ease-out;
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #129DA4;
+    border-radius: 0 4px 0 32px;
+}
+
+.card1 {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.card1::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -35px;
+    right: -16px;
+    background: #4D7FB8;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+.card1:hover::before {
+    transform: scale(41);
+}
+
+.card1:hover h2 {
+    color: white;
+}
+
+.card1:hover h3 {
+    color: white;
+}
+
+.card1:hover p {
+    color: white !important;
+}
+
+.image-box:hover {
+    transform: translateY(-5px) !important;
+}
+
+/*-------------------------- Investor Page Site A -------------------*/
+#investor-faq-section h2 {
+    font-size: 16px !important;
+    color: black;
+}
+
+#investor-faq-section svg {
+    display: none !important;
+}
+
+#investor-faq-section .divide-y {
+    border: none !important;
+}
+
+#investor-faq-section button {
+    background: none;
+    padding-left: 0 !important;
+    border-bottom: 1px solid rgb(255 255 255 / 38%);
+    outline: none !important;
+}
+
+#investor-faq-section button:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+#contact-form-section textarea {
+    outline: none !important;
+    box-shadow: none !important;
+    background: rgba(250, 250, 250, 0.73);
+}
+
+.peer:checked ~ .peer-checked\:bg-teal-600 {
+    background: #4D7FB8 !important;
+}
+
+/* --------------- Loader Design --------------*/
+.css-1c0ed4l {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh !important;
+    text-align: center !important;
+}
+
+
+.loader-container {
+    height: 200px;
+    width: 400px;
+    border: none;
+}
+
+.loader {
+    width: 200px;
+    height: 5px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background-color: #4D7FB8;
+    width: 0;
+    animation: fillBar 2s infinite ease-in-out;
+}
+
+@keyframes fillBar {
+    0% {
+        width: 0;
+        border-radius: 15px;
+    }
+    50% {
+        width: 60%;
+        border-radius: 10px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+.attribute {
+    position: absolute;
+    bottom: 10px;
+}
+
+.css-1c0ed4l div {
+    margin: 3px;
+}
+
+/*--------------- Toastify Message Design ------------------*/
+.toastBody {
+    font-size: 14px;
+}
+
+/* Success */
+.Toastify__toast-theme--colored.Toastify__toast--success {
+    background: #D9EDE1 !important;
+    color: rgba(71, 174, 116, 0.74) !important;
+    border: 1.5px solid #47AE74 !important;
+}
+
+.Toastify__toast--success .Toastify__close-button > svg {
+    color: #47AE74 !important;
+}
+
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--success {
+    background: rgb(71 174 116 / 17%) !important;
+}
+
+/* Warning */
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+    background: rgb(253, 246, 178) !important;
+    color: #C27839 !important;
+    border: 1.5px solid #C27839 !important;
+}
+
+.Toastify__toast--warning .Toastify__close-button > svg {
+    color: #C27839 !important;
+}
+
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning {
+    background: rgba(194, 120, 57, 0.36) !important;
+}
+
+/* Info */
+.Toastify__toast-theme--colored.Toastify__toast--error {
+    background: #ff9999 !important;
+    color: #b22020 !important;
+    border: 1.5px solid #b22020 !important;
+}
+
+.Toastify__toast--error .Toastify__close-button > svg {
+    color: darkred !important;
+}
+
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {
+    background: rgba(139, 0, 0, 0.19) !important;
+}
+
+/* Info */
+.Toastify__toast-theme--colored.Toastify__toast--info {
+    background: #E1E7EF !important;
+    color: #006FBE !important;
+    border: 1.5px solid rgba(0, 111, 190, 0.5) !important;
+}
+
+.Toastify__toast--info .Toastify__close-button > svg {
+    color: #006FBE !important;
+}
+
+.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info {
+    background: rgba(77, 127, 184, 0.61) !important;
+}
+
+/* ----------------------------- All Tab Page Design ----------------------*/
+.obligations_list li {
+    list-style: lower-alpha;
+    font-weight: 900;
+}
+
+.obligations_list li h4 {
+    font-weight: 400;
+}
+
+/*-------------- Some Design Make Own Start-------------------- */
+.calculate-formula {
+    margin-top: 3rem;
+    border: 1px dashed;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.dim-divisor {
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculate-formula .lwh-cal {
+    border-bottom: 1px solid black;
+}
+
+.after-calculate-value .calculate-formula {
+    margin-top: 0;
+}
+
+.dim-divisor {
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculate-formula .lwh-cal {
+    border-bottom: 1px solid black;
+}
+
+#return-policy-section .bbox_wrap {
+    position: relative;
+}
+
+#return-policy-section .bbox_wrap::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    width: 25%;
+    height: 2px;
+    border-top: 3px dotted #ccc;
+}
+
+#return-policy-section .last_bbox_wrap::before {
+    border: none;
+}
+
+/*-------------- Some Design Make Own End-------------------- */
+
+
+/* ------------------- Media Query ----------------*/
+@media only screen and (max-width: 1100px) {
+    #hiring-section .bimage_wrap::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 107%;
+        width: 25%;
+        height: 2px;
+        border-top: 3px dotted #ccc;
+    }
+
+    #hiring-section .last-bimage-wrap::before {
+        border: none;
+    }
+
+    #return-policy-section .bbox_wrap::before {
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #hiring-section .bimage_wrap::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 127%;
+        width: 25%;
+        height: 2px;
+        border-top: 3px dotted #ccc;
+    }
+
+    #hiring-section .third-bimage-wrap::before {
+        border: none;
+    }
+
+    #hiring-section .last-bimage-wrap::before {
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #hiring-section .bimage_wrap::before {
+        border: none;
+    }
+}

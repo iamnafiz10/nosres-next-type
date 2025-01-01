@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.43;fill:#EAEAEA;}
+	.st1{fill:#4C7EB8;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#8B8D90;}
+	.st4{fill:#ABABAB;}
+	.st5{font-family:'HelveticaNeue-Light';}
+	.st6{font-size:9.4029px;}
+</style>
+<g>
+	<circle class="st0" cx="50" cy="50" r="49.5"/>
+</g>
+<g>
+	<circle class="st1" cx="50" cy="50" r="38.8"/>
+	<circle class="st2" cx="50" cy="50" r="34.1"/>
+	<g>
+		<path class="st1" d="M50.3,27.8c-11,0-19.9,8.9-19.9,19.9v12.7h5.3V47.7c0-8.1,6.6-14.6,14.6-14.6S65,39.6,65,47.7v12.7h5.3V47.7
+			C70.2,36.7,61.3,27.8,50.3,27.8z"/>
+		<path class="st3" d="M37.9,47.8v12.5h5.3V47.8c0-4,3.2-7.2,7.2-7.2v-5.3C43.5,35.4,37.9,41,37.9,47.8z"/>
+	</g>
+	<g>
+		<text transform="matrix(1.1855 0 0 1 29.9058 68.3232)" class="st4 st5 st6">SELECT</text>
+	</g>
+</g>
+</svg>
