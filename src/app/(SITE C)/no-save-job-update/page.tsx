@@ -90,6 +90,11 @@ function Page() {
         notify();
         closeAllEmailPopups();
     };
+
+    const CrateAlertClick = () => {
+        setOpenConfirmEmailModal(true);
+        setOpenCountryModal(false);
+    };
     const [openConfirmEmailModal, setOpenConfirmEmailModal] = useState<boolean>(false);
     return (
         <>
@@ -103,7 +108,7 @@ function Page() {
                             will find the perfect fit to propel your career forward.
                         </p>
                         <button onClick={() => setOpenCountryModal(true)} type="button"
-                                className="mt-4 py-2 px-4 gap-2 bg-primary text-white flex items-center text-[14px] rounded">
+                                className="mt-4 py-2 px-4 gap-2 bg-[#4D7FB8] hover:bg-[#3A5F8A] text-white flex items-center text-[14px] rounded">
                             <LuBellPlus size={15}/>
                             Create Job Alert
                         </button>
@@ -368,7 +373,7 @@ function Page() {
 
             {/* Country change Pop-Up Start */}
             <Modal size="xl"
-                   dismissible={!openConfirmEmailModal}
+                   dismissible
                    show={openCountryModal}
                    onClose={() => setOpenCountryModal(false)}
                    style={{
@@ -436,7 +441,7 @@ function Page() {
                             </div>
 
                             <div className="mt-4">
-                                <button onClick={() => setOpenConfirmEmailModal(true)}
+                                <button onClick={CrateAlertClick}
                                         className="px-5 text-[14px] py-[6px] border border-primary bg-[#4D7FB8] hover:bg-[#3A5F8A] hover:text-white hover:border-[#3A5F8A] text-white rounded">
                                     Create Alert
                                 </button>
@@ -464,8 +469,8 @@ function Page() {
                         </div>
                         <h4 className="text-[16px] mt-2">Job Alert Created!</h4>
                         <p className="text-center mt-2">
-                            You’ll now receive updates about new job opportunities that
-                            match your preferences.
+                            Your job alert has been created! Please check your email inbox to confirm your email and
+                            activate the alert.
                         </p>
                         <button onClick={handleConfirmPopEmailButtonClick}
                                 className="px-10 w-full mt-4 text-[14px] py-2 border border-primary bg-[#4D7FB8] hover:bg-[#3A5F8A] hover:border-primary text-white rounded">
