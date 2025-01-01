@@ -108,7 +108,7 @@ function Page() {
                             Create Job Alert
                         </button>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-14">
                         <div className="col lg:col-span-4">
                             <div className="box bg-white rounded py-6 px-8">
                                 <div className="search-bar relative">
@@ -367,7 +367,7 @@ function Page() {
             </section>
 
             {/* Country change Pop-Up Start */}
-            <Modal size="lg"
+            <Modal size="xl"
                    dismissible={!openConfirmEmailModal}
                    show={openCountryModal}
                    onClose={() => setOpenCountryModal(false)}
@@ -386,13 +386,13 @@ function Page() {
                             instantly when new opportunities that match your career interest become
                             available.
                         </p>
-                        <div className="block md:flex w-full items-center justify-between gap-4 mt-4">
+                        <div className="block md:flex items-center gap-[-10px] justify-between">
                             <input
-                                className="w-full mt-1 rounded py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                className="mt-4 rounded py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
                                 type="text"
                                 placeholder="jogndoe@mail.com"
                             />
-                            <div className="w-full select-box mt-2" ref={selectBoxRefCountry}>
+                            <div className="mt-4 select-box" ref={selectBoxRefCountry}>
                                 <div className="select-option flex"
                                      onClick={toggleOptionsVisibilityCountry}>
                                     <input type="text" placeholder="Select Team"
@@ -401,7 +401,7 @@ function Page() {
                                            className="focus:ring focus:ring-transparent focus:outline-none focus:border-gray-300 "/>
                                 </div>
                                 {isOptionsVisibleCountry && (
-                                    <div className="info-content team_content w-full md:w-[42%]">
+                                    <div className="info-content team_content w-[86%] sm:w-[92%] md:w-[35%] z-50">
                                         <ul className="options">
                                             <li onClick={() => handleOptionClickCountry("Administration")}>
                                                 Administration
@@ -434,12 +434,13 @@ function Page() {
                                     </div>
                                 )}
                             </div>
-                        </div>
-                        <div className="flex justify-end mt-4">
-                            <button onClick={() => setOpenConfirmEmailModal(true)}
-                                    className="px-4 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">
-                                Create Alert
-                            </button>
+
+                            <div className="mt-4">
+                                <button onClick={() => setOpenConfirmEmailModal(true)}
+                                        className="px-5 text-[14px] py-[6px] border border-primary bg-[#4D7FB8] hover:bg-[#3A5F8A] hover:text-white hover:border-[#3A5F8A] text-white rounded">
+                                    Create Alert
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </Modal.Body>
@@ -447,7 +448,7 @@ function Page() {
             {/* Country change Pop-Up End */}
 
             {/* Confirm Email Pop-Up Start */}
-            <Modal size="lg"
+            <Modal size="xl"
                    show={openConfirmEmailModal}
                    onClose={() => setOpenConfirmEmailModal(false)}
                    style={{
@@ -467,7 +468,7 @@ function Page() {
                             match your preferences.
                         </p>
                         <button onClick={handleConfirmPopEmailButtonClick}
-                                className="px-10 mt-4 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">
+                                className="px-10 w-full mt-4 text-[14px] py-2 border border-primary bg-[#4D7FB8] hover:bg-[#3A5F8A] hover:border-primary text-white rounded">
                             Close
                         </button>
                     </div>
