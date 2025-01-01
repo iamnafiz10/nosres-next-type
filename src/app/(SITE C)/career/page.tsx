@@ -10,8 +10,7 @@ import {
 import Link from "next/link";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-import {MdOutlineWorkOff} from "react-icons/md";
-import {LuPalette} from "react-icons/lu";
+import {LuBellRing, LuPalette} from "react-icons/lu";
 import {Checkbox, Label, Modal} from "flowbite-react";
 
 const Page = () => {
@@ -35,13 +34,16 @@ const Page = () => {
     const [openOneModal, setOpenOneModal] = useState<boolean>(false);
     const [openTwoModal, setOpenTwoModal] = useState<boolean>(false);
     const [openThreeModal, setOpenThreeModal] = useState<boolean>(false);
+    const [openFourModal, setOpenFourModal] = useState<boolean>(false);
+    const [openFiveModal, setOpenFiveModal] = useState<boolean>(false);
+    const [openSixModal, setOpenSixModal] = useState<boolean>(false);
     return (
         <>
             <section id="user-details-section" className="bg-[#F9FAFB] h-[100%]">
                 <div className="container py-16">
                     <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8">
                         <div
-                            className="col lg:col-span-5 flex-initial lg:sticky top-[80px] h-full lg:h-[55vh] w-full overflow-hidden lg:overflow-auto">
+                            className="col lg:col-span-5 flex-initial lg:sticky top-[80px] h-full lg:h-[60vh] w-full overflow-hidden lg:overflow-auto">
                             {/* Sidebar */}
                             <aside id="logo-sidebar"
                                    aria-label="Sidebar">
@@ -93,7 +95,14 @@ const Page = () => {
                                             </Link>
                                         </li>
 
-
+                                        <li>
+                                            <Link href="/job-alerts"
+                                                  className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                                                <LuBellRing size={20}
+                                                            className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
+                                                <span className="ms-3">Job Alerts</span>
+                                            </Link>
+                                        </li>
                                         <hr/>
                                         <li>
                                             <Link href="#"
@@ -217,7 +226,6 @@ const Page = () => {
                                         )}
                                     </div>
 
-
                                     {/*Three*/}
                                     <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
                                         <div className="head mb-2">
@@ -243,6 +251,103 @@ const Page = () => {
                                                 </div>
                                                 <div className="right">
                                                     <button onClick={() => setOpenThreeModal(true)} type="button"
+                                                            className="text-primary text-[14px]">Edit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    {/*Four*/}
+                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                        <div className="head mb-2">
+                                            <h6>Preferred Degree</h6>
+                                        </div>
+                                        <hr/>
+                                        <div className="mt-4 box">
+                                            <p>
+                                                Select your preferred degree.
+                                            </p>
+                                        </div>
+                                        {loading ? (
+                                            <>
+                                                <Skeleton height={60} count={1}/>
+                                                <Skeleton height={10} count={1}/>
+                                            </>
+                                        ) : (
+                                            <div
+                                                className="box mt-4 rounded flex items-start justify-between bg-white border px-4 py-4">
+                                                <div className="left">
+                                                    <h6 className="text-[14px]">Preferred Degree</h6>
+                                                    <h4 className="mt-0 text-[12px] text-gray-500">Not stated</h4>
+                                                </div>
+                                                <div className="right">
+                                                    <button onClick={() => setOpenFourModal(true)} type="button"
+                                                            className="text-primary text-[14px]">Edit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    {/*Five*/}
+                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                        <div className="head mb-2">
+                                            <h6>Employment Type</h6>
+                                        </div>
+                                        <hr/>
+                                        <div className="mt-4 box">
+                                            <p>
+                                                Select what works best for you.
+                                            </p>
+                                        </div>
+                                        {loading ? (
+                                            <>
+                                                <Skeleton height={60} count={1}/>
+                                                <Skeleton height={10} count={1}/>
+                                            </>
+                                        ) : (
+                                            <div
+                                                className="box mt-4 rounded flex items-start justify-between bg-white border px-4 py-4">
+                                                <div className="left">
+                                                    <h6 className="text-[14px]">Employment Type</h6>
+                                                    <h4 className="mt-0 text-[12px] text-gray-500">Not stated</h4>
+                                                </div>
+                                                <div className="right">
+                                                    <button onClick={() => setOpenFiveModal(true)} type="button"
+                                                            className="text-primary text-[14px]">Edit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
+
+                                    {/*Six*/}
+                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                        <div className="head mb-2">
+                                            <h6>Keywords</h6>
+                                        </div>
+                                        <hr/>
+                                        <div className="mt-4 box">
+                                            <p>
+                                                Add specific skills, certifications, or tools you’d like in your ideal
+                                                job.
+                                            </p>
+                                        </div>
+                                        {loading ? (
+                                            <>
+                                                <Skeleton height={60} count={1}/>
+                                                <Skeleton height={10} count={1}/>
+                                            </>
+                                        ) : (
+                                            <div
+                                                className="box mt-4 rounded flex items-start justify-between bg-white border px-4 py-4">
+                                                <div className="left">
+                                                    <h6 className="text-[14px]">Employment Type</h6>
+                                                    <h4 className="mt-0 text-[12px] text-gray-500">Not stated</h4>
+                                                </div>
+                                                <div className="right">
+                                                    <button onClick={() => setOpenSixModal(true)} type="button"
                                                             className="text-primary text-[14px]">Edit
                                                     </button>
                                                 </div>
@@ -447,6 +552,157 @@ const Page = () => {
                             Cancel
                         </button>
                         <button onClick={() => setOpenThreeModal(false)}
+                                className="px-10 text-[14px] py-2 bg-[#4D7FB8] hover:bg-[#3A5F8A] text-white rounded">
+                            Save
+                        </button>
+                    </div>
+                </Modal.Footer>
+            </Modal>
+            {/*Four*/}
+            <Modal size="lg" dismissible show={openFourModal}
+                   onClose={() => setOpenFourModal(false)}>
+                <Modal.Header>
+                    <h4 className="text-[16px]">Edit Preferred Degree</h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="modal_body box">
+                        <p>
+                            Please select your preferred degree. (You can select more than
+                            one)
+                        </p>
+                        <div id="checkbox" className="mt-3">
+                            <div className="flex items-center gap-2">
+                                <Checkbox id="sone"/>
+                                <Label htmlFor="sone" className="text-gray-500 font-normal">
+                                    PhD
+                                </Label>
+                            </div>
+
+                            <div className="mt-2 flex items-center gap-2">
+                                <Checkbox id="stwo" defaultChecked/>
+                                <Label htmlFor="stwo" className="text-gray-500 font-normal">
+                                    Master
+                                </Label>
+                            </div>
+
+                            <div className="mt-2 flex items-center gap-2">
+                                <Checkbox id="sthree"/>
+                                <Label htmlFor="sthree" className="text-gray-500 font-normal">
+                                    Bachelor
+                                </Label>
+                            </div>
+
+                            <div className="mt-2 flex items-center gap-2">
+                                <Checkbox id="sfour"/>
+                                <Label htmlFor="sfour" className="text-gray-500 font-normal">
+                                    Pursuing Degree
+                                </Label>
+                            </div>
+
+                            <div className="mt-2 flex items-center gap-2">
+                                <Checkbox id="sfive"/>
+                                <Label htmlFor="sfive" className="text-gray-500 font-normal">
+                                    Associate
+                                </Label>
+                            </div>
+                        </div>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <div className="flex w-full items-center justify-between">
+                        <button onClick={() => setOpenFourModal(false)}
+                                className="px-10 text-[14px] py-2 bg-[#E5E5E8] hover:bg-[#C6C6C6] text-black rounded">
+                            Cancel
+                        </button>
+                        <button onClick={() => setOpenFourModal(false)}
+                                className="px-10 text-[14px] py-2 bg-[#4D7FB8] hover:bg-[#3A5F8A] text-white rounded">
+                            Save
+                        </button>
+                    </div>
+                </Modal.Footer>
+            </Modal>
+            {/*Five*/}
+            <Modal size="lg" dismissible show={openFiveModal}
+                   onClose={() => setOpenFiveModal(false)}>
+                <Modal.Header>
+                    <h4 className="text-[16px]">Edit Employment Type</h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="modal_body box">
+                        <p>
+                            Please select what works best for you. (You can select more than
+                            one)
+                        </p>
+                        <div id="checkbox" className="mt-3">
+                            <div className="flex items-center gap-2">
+                                <Checkbox id="sone"/>
+                                <Label htmlFor="sone" className="text-gray-500 font-normal">
+                                    Full-Time
+                                </Label>
+                            </div>
+
+                            <div className="mt-2 flex items-center gap-2">
+                                <Checkbox id="stwo" defaultChecked/>
+                                <Label htmlFor="stwo" className="text-gray-500 font-normal">
+                                    Part-Time
+                                </Label>
+                            </div>
+
+                            <div className="mt-2 flex items-center gap-2">
+                                <Checkbox id="sthree"/>
+                                <Label htmlFor="sthree" className="text-gray-500 font-normal">
+                                    Temporary
+                                </Label>
+                            </div>
+
+                            <div className="mt-2 flex items-center gap-2">
+                                <Checkbox id="sfour"/>
+                                <Label htmlFor="sfour" className="text-gray-500 font-normal">
+                                    Intern
+                                </Label>
+                            </div>
+                        </div>
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <div className="flex w-full items-center justify-between">
+                        <button onClick={() => setOpenFiveModal(false)}
+                                className="px-10 text-[14px] py-2 bg-[#E5E5E8] hover:bg-[#C6C6C6] text-black rounded">
+                            Cancel
+                        </button>
+                        <button onClick={() => setOpenFiveModal(false)}
+                                className="px-10 text-[14px] py-2 bg-[#4D7FB8] hover:bg-[#3A5F8A] text-white rounded">
+                            Save
+                        </button>
+                    </div>
+                </Modal.Footer>
+            </Modal>
+            {/*Six*/}
+            <Modal size="lg" dismissible show={openSixModal}
+                   onClose={() => setOpenSixModal(false)}>
+                <Modal.Header>
+                    <h4 className="text-[16px]">Edit Keywords</h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="modal_body box">
+                        <p>
+                            Please list your keywords, separated by commas.
+                        </p>
+                        <h4 className="text-[14px] mt-3">Add Skills</h4>
+                        <input
+                            className="mt-2 rounded w-full pb-[50px] py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                            type="text"
+                            placeholder="e.g., Python, Adobe Photoshop, CPA Certification"
+                        />
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <div className="flex w-full items-center justify-between">
+                        <button onClick={() => setOpenSixModal(false)}
+                                className="px-10 text-[14px] py-2 bg-[#E5E5E8] hover:bg-[#C6C6C6] text-black rounded">
+                            Cancel
+                        </button>
+                        <button onClick={() => setOpenSixModal(false)}
                                 className="px-10 text-[14px] py-2 bg-[#4D7FB8] hover:bg-[#3A5F8A] text-white rounded">
                             Save
                         </button>
