@@ -96,7 +96,7 @@ const Page = () => {
                                         </li>
 
                                         <li>
-                                            <Link href="/job-alerts"
+                                            <Link href="/job-alert-one"
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                                 <LuBellRing size={20}
                                                             className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
