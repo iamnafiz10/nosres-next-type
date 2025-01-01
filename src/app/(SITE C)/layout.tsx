@@ -1,5 +1,6 @@
 import '@/./app/globals.css';
 import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Header from "@/app/(SITE C)/Header";
 import Footer from "@/app/(SITE C)/Footer";
 import AOSProvider from '@/app/AOSProvider';
