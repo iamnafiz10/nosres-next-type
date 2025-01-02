@@ -3,14 +3,13 @@ import React, {useEffect, useState} from 'react';
 import {HiUserCircle} from "react-icons/hi";
 import {GoQuestion} from "react-icons/go";
 import {
-    HiOutlineIdentification,
     HiOutlineFolder,
     HiOutlineBookmark,
 } from "react-icons/hi2";
 import Link from "next/link";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-import {LuBellRing, LuPalette} from "react-icons/lu";
+import {LuBellRing, LuContact, LuPalette} from "react-icons/lu";
 import {Checkbox, Label, Modal} from "flowbite-react";
 
 const Page = () => {
@@ -62,14 +61,14 @@ const Page = () => {
                                         <li>
                                             <Link href="/information"
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
-                                                <HiOutlineIdentification size={25}
-                                                                         className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
+                                                <LuContact size={22}
+                                                           className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
                                                 <span className="ms-3">Information</span>
                                             </Link>
                                         </li>
 
                                         <li>
-                                            <Link href="#"
+                                            <Link href="/no-save-job"
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                                 <HiOutlineBookmark size={22}
                                                                    className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
@@ -121,7 +120,7 @@ const Page = () => {
                             <div className="grid grid-cols-1 mb-4 info-wrapper">
 
                                 {/*First*/}
-                                <div className="col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                <div className="col w-full py-6 px-8 bg-white rounded">
                                     {loading ? (
                                         <>
                                             <Skeleton height={30} count={1}/>
@@ -129,10 +128,7 @@ const Page = () => {
                                         </>
                                     ) : (
                                         <>
-                                            <div className="head mb-2">
-                                                <h6 className="font-700">Career Interests Form</h6>
-                                            </div>
-                                            <div className="mt-4 box">
+                                            <div className="mt-0 box">
                                                 <h4 className="text-[14px]">
                                                     Tell us about your career goals to help us find the best
                                                     opportunities for you!
@@ -163,7 +159,7 @@ const Page = () => {
 
                                 <div className="grid grid-cols-1 mb-4 info-wrapper">
                                     {/*One*/}
-                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                    <div className="mt-6 col w-full py-6 px-8 bg-white rounded">
                                         <div className="head mb-2">
                                             <h6>Preferred Job Titles</h6>
                                         </div>
@@ -195,7 +191,7 @@ const Page = () => {
                                     </div>
 
                                     {/*Two*/}
-                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                    <div className="mt-6 col w-full py-6 px-8 bg-white rounded">
                                         <div className="head mb-2">
                                             <h6>Desired Locations</h6>
                                         </div>
@@ -227,7 +223,7 @@ const Page = () => {
                                     </div>
 
                                     {/*Three*/}
-                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                    <div className="mt-6 col w-full py-6 px-8 bg-white rounded">
                                         <div className="head mb-2">
                                             <h6>Team of Interest</h6>
                                         </div>
@@ -259,7 +255,7 @@ const Page = () => {
                                     </div>
 
                                     {/*Four*/}
-                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                    <div className="mt-6 col w-full py-6 px-8 bg-white rounded">
                                         <div className="head mb-2">
                                             <h6>Preferred Degree</h6>
                                         </div>
@@ -291,7 +287,7 @@ const Page = () => {
                                     </div>
 
                                     {/*Five*/}
-                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                    <div className="mt-6 col w-full py-6 px-8 bg-white rounded">
                                         <div className="head mb-2">
                                             <h6>Employment Type</h6>
                                         </div>
@@ -323,7 +319,7 @@ const Page = () => {
                                     </div>
 
                                     {/*Six*/}
-                                    <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                    <div className="mt-6 col w-full py-6 px-8 bg-white rounded">
                                         <div className="head mb-2">
                                             <h6>Keywords</h6>
                                         </div>

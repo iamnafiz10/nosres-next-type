@@ -4,7 +4,6 @@ import {HiUserCircle} from "react-icons/hi";
 import {GoQuestion} from "react-icons/go";
 import {ImAttachment} from "react-icons/im";
 import {
-    HiOutlineIdentification,
     HiOutlineFolder,
     HiOutlineBookmark, HiOutlinePlusCircle, HiOutlineMinusCircle, HiOutlineCloudArrowUp
 } from "react-icons/hi2";
@@ -12,6 +11,7 @@ import {Checkbox, Label, Modal, Radio} from "flowbite-react";
 import Link from "next/link";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import {LuBellRing, LuContact, LuPalette} from "react-icons/lu";
 
 const Page = () => {
 
@@ -206,7 +206,7 @@ const Page = () => {
                 <div className="container py-16">
                     <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8">
                         <div
-                            className="col lg:col-span-5 flex-initial lg:sticky top-[80px] h-full lg:h-[45vh] w-full overflow-hidden lg:overflow-auto">
+                            className="col lg:col-span-5 flex-initial lg:sticky top-[80px] h-full lg:h-[60vh] w-full overflow-hidden lg:overflow-auto">
                             {/* Sidebar */}
                             <aside id="logo-sidebar"
                                    aria-label="Sidebar">
@@ -225,14 +225,14 @@ const Page = () => {
                                         <li>
                                             <Link href="/information"
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
-                                                <HiOutlineIdentification size={25}
-                                                                         className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
+                                                <LuContact size={22}
+                                                           className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
                                                 <span className="ms-3 font-semibold">Information</span>
                                             </Link>
                                         </li>
 
                                         <li>
-                                            <Link href="/save-job"
+                                            <Link href="/no-save-job"
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                                 <HiOutlineBookmark size={22}
                                                                    className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
@@ -249,7 +249,23 @@ const Page = () => {
                                             </Link>
                                         </li>
 
+                                        <li>
+                                            <Link href="/career"
+                                                  className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                                                <LuPalette size={20}
+                                                           className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
+                                                <span className="ms-3">Career Interests</span>
+                                            </Link>
+                                        </li>
 
+                                        <li>
+                                            <Link href="/job-alert-one"
+                                                  className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                                                <LuBellRing size={20}
+                                                            className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
+                                                <span className="ms-3">Job Alerts</span>
+                                            </Link>
+                                        </li>
                                         <hr/>
                                         <li>
                                             <Link href="#"
