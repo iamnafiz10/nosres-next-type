@@ -395,12 +395,12 @@ function Page() {
                             <input
                                 className="mt-4 rounded py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
                                 type="text"
-                                placeholder="jogndoe@mail.com"
+                                placeholder="johndoe@mail.com"
                             />
                             <div className="mt-4 select-box" ref={selectBoxRefCountry}>
                                 <div className="select-option flex"
                                      onClick={toggleOptionsVisibilityCountry}>
-                                    <input type="text" placeholder="Select Team"
+                                    <input type="text" placeholder="Select team"
                                            readOnly
                                            value={selectedOptionCountry}
                                            className="focus:ring focus:ring-transparent focus:outline-none focus:border-gray-300 "/>

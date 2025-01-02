@@ -28,14 +28,6 @@ const Page = () => {
 
     useEffect(() => {
     }, [loading]);
-
-    // Popup
-    const [openOneModal, setOpenOneModal] = useState<boolean>(false);
-    const [openTwoModal, setOpenTwoModal] = useState<boolean>(false);
-    const [openThreeModal, setOpenThreeModal] = useState<boolean>(false);
-    const [openFourModal, setOpenFourModal] = useState<boolean>(false);
-    const [openFiveModal, setOpenFiveModal] = useState<boolean>(false);
-    const [openSixModal, setOpenSixModal] = useState<boolean>(false);
     return (
         <>
             <section id="user-details-section" className="bg-[#F9FAFB] h-[100%]">
