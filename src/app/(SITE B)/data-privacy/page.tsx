@@ -204,6 +204,31 @@ const Page = () => {
                                 </div>
                             )}
 
+                            {loading ? (
+                                <>
+                                    <Skeleton height={60} count={1}/>
+                                    <Skeleton height={10} count={1}/>
+                                </>
+                            ) : (
+                                <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
+                                    <div className="left">
+                                        <h6 className="text-[14px]">
+                                            Support Requests
+                                        </h6>
+                                        <p>
+                                            View information you previously requested from the Nosres<br/> Support
+                                            Team.
+                                        </p>
+                                    </div>
+                                    <div className="right">
+                                        <Link href='#'
+                                              className="text-primary text-[14px]">
+                                            View information
+                                        </Link>
+                                    </div>
+                                </div>
+                            )}
+
                             {/* Data Download Pop-Up Start */}
                             <Modal size="lg" dismissible show={openDataDownloadModal}
                                    onClose={() => setOpenDataDownloadModal(false)}>
