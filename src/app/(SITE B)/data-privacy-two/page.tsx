@@ -5,7 +5,7 @@ import {
 } from "react-icons/hi2";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-import {LuFile} from "react-icons/lu";
+import {LuMessageSquareText} from "react-icons/lu";
 import {ImAttachment} from "react-icons/im";
 import {Modal} from "flowbite-react";
 
@@ -75,7 +75,7 @@ const Page = () => {
                                                         <button onClick={() => setOpenDocumentModal(true)} type='button'
                                                                 className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-gray-500 py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
                                                             <span>
-                                                                <LuFile size={17}/>
+                                                                <LuMessageSquareText size={17}/>
                                                             </span>
                                                             Secure Message
                                                         </button>
@@ -89,7 +89,7 @@ const Page = () => {
                                                         <button type='button'
                                                                 className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-gray-500 py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
                                                             <span>
-                                                                <LuFile size={17}/>
+                                                                <LuMessageSquareText size={17}/>
                                                             </span>
                                                             Secure Message
                                                         </button>
@@ -103,7 +103,7 @@ const Page = () => {
                                                         <button type='button'
                                                                 className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-gray-500 py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
                                                             <span>
-                                                                <LuFile size={17}/>
+                                                                <LuMessageSquareText size={17}/>
                                                             </span>
                                                             Secure Message
                                                         </button>
@@ -144,39 +144,39 @@ const Page = () => {
 
                             {/* Files */}
                             <div
-                                className="box mt-4 rounded rounded-br-none rounded-bl-none flex items-start justify-between bg-white border px-4 py-4">
+                                className="box mt-4 rounded rounded-br-none rounded-bl-none flex items-center justify-between bg-white border px-4 py-3">
                                 <div className="left flex items-center gap-1">
-                                    <ImAttachment size={15} className="text-gray-400"/>
-                                    <h6 className="text-[14px]">
+                                    <ImAttachment size={14} className="text-gray-400"/>
+                                    <h6 className="text-[12px]">
                                         contract-signed
                                     </h6>
                                 </div>
                                 <div className="right">
-                                    <button className="text-primary text-[14px]">Download</button>
+                                    <button className="text-primary text-[12px]">Download</button>
                                 </div>
                             </div>
                             <div
-                                className="box border-t-0 flex items-start justify-between bg-white border px-4 py-4">
+                                className="box border-t-0 flex items-center justify-between bg-white border px-4 py-3">
                                 <div className="left flex items-center gap-1">
-                                    <ImAttachment size={15} className="text-gray-400"/>
-                                    <h6 className="text-[14px]">
+                                    <ImAttachment size={14} className="text-gray-400"/>
+                                    <h6 className="text-[12px]">
                                         contract-signed
                                     </h6>
                                 </div>
                                 <div className="right">
-                                    <button className="text-primary text-[14px]">Download</button>
+                                    <button className="text-primary text-[12px]">Download</button>
                                 </div>
                             </div>
                             <div
-                                className="box border-t-0 rounded-tr-none rounded-tl-none rounded flex items-start justify-between bg-white border px-4 py-4">
+                                className="box border-t-0 rounded-tr-none rounded-tl-none rounded flex items-center justify-between bg-white border px-4 py-3">
                                 <div className="left flex items-center gap-1">
-                                    <ImAttachment size={15} className="text-gray-400"/>
-                                    <h6 className="text-[14px]">
+                                    <ImAttachment size={14} className="text-gray-400"/>
+                                    <h6 className="text-[12px]">
                                         contract-signed
                                     </h6>
                                 </div>
                                 <div className="right">
-                                    <button className="text-primary text-[14px]">Download</button>
+                                    <button className="text-primary text-[12px]">Download</button>
                                 </div>
                             </div>
                         </div>

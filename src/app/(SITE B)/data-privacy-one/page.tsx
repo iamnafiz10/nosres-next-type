@@ -55,7 +55,7 @@ const Page = () => {
                                 </div>
                                 <div className="block items-center justify-center gap-4 mt-6">
                                     <button type='button'
-                                            className="text-[14px] w-full py-2 px-6 bg-primary border border-primary text-white rounded hover:bg-transparent hover:text-primary">
+                                            className="text-[14px] w-full py-2 px-6 border border-primary bg-primary hover:bg-[#3A5F8A] text-white rounded">
                                         Go Back to Data & Privacy
                                     </button>
                                 </div>
