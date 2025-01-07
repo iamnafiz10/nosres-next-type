@@ -126,7 +126,7 @@ const Page = () => {
                                     <div className="image-upload mt-4">
                                         <div className="flex items-center justify-center mt-3 w-full">
                                             <label htmlFor="dropzone-file"
-                                                   className="flex flex-col items-center justify-center w-full h-32 border-2 border-blue-300 border-dashed rounded-lg cursor-pointer bg-blue-50 hover:bg-blue-100">
+                                                   className="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-200 hover:border-blue-300 border-dashed rounded-lg cursor-pointer bg-transparent hover:bg-blue-100">
                                                 <div
                                                     className="flex flex-col items-center justify-center pt-5 pb-6">
                                                     <HiOutlineCloudArrowUp
@@ -135,10 +135,10 @@ const Page = () => {
                                                         className="font-semibold">Click to upload</span> or
                                                         drag and
                                                         drop</p>
-                                                    <p className="text-xs text-center text-gray-500 dark:text-gray-400">
+                                                    <h4 className="text-[12px] text-center text-gray-500">
                                                         You may upload up to 5 PDF, PNG, or JPG files.<br/> Max file
                                                         size: 5MB
-                                                    </p>
+                                                    </h4>
                                                 </div>
                                                 <input
                                                     id="dropzone-file"
