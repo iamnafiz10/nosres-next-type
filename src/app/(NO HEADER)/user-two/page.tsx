@@ -36,41 +36,6 @@ const Page = () => {
     const handleRemoveFile = (index: number) => {
         setSelectedFiles((prev) => prev.filter((_, i) => i !== index));
     };
-
-    const fileBoxes = Array(3)
-        .fill(null)
-        .map((_, index) => (
-            <div
-                key={index}
-                className={`box mt-0 rounded flex items-center justify-between bg-white px-4 py-3 relative ${
-                    index === 0 ? "" : ""
-                }`}
-            >
-                {(index === 0 || index === 1) && (
-                    <div
-                        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[88%] border-b border-gray-300"/>
-                )}
-                <div className="left flex items-center gap-1">
-                    <ImAttachment size={14} className="text-gray-400"/>
-                    {selectedFiles[index] ? (
-                        <h6 className="text-[12px]">{selectedFiles[index].name}</h6>
-                    ) : (
-                        <h6 className="text-[12px] text-gray-400">No file selected</h6>
-                    )}
-                </div>
-                {selectedFiles[index] ? (
-                    <div className="right mt-0 cursor-pointer flex gap-1 items-center">
-                        <HiOutlineMinusCircle className="text-primary"/>
-                        <button
-                            className="text-primary text-[14px]"
-                            onClick={() => handleRemoveFile(index)}
-                        >
-                            Remove
-                        </button>
-                    </div>
-                ) : null}
-            </div>
-        ));
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB] flex items-center justify-center pt-[100px] pb-10">
@@ -119,16 +84,49 @@ const Page = () => {
                                     </div>
                                 </div>
 
-                                {/* Files */}
-                                <div className="border rounded mt-4">
-                                    {fileBoxes}
+                                {/* Files View*/}
+                                <div className="rounded border mt-4">
+                                    {selectedFiles.length === 0 && (
+                                        <div
+                                            className="box mt-0 rounded flex items-center justify-between bg-white px-4 py-3 relative">
+                                            <div className="left flex items-center gap-1">
+                                                <ImAttachment size={14} className="text-gray-400"/>
+                                                <h6 className="text-[12px] text-gray-400">No file selected</h6>
+                                            </div>
+                                        </div>
+                                    )}
+                                    {selectedFiles.map((file, index) => (
+                                        <div
+                                            key={index}
+                                            className="box rounded flex items-center justify-between bg-white px-4 py-3 relative"
+                                        >
+                                            <div className="left flex items-center gap-1">
+                                                <ImAttachment size={14} className="text-gray-400"/>
+                                                <h6 className="text-[12px]">{file.name}</h6>
+                                            </div>
+                                            {index !== selectedFiles.length - 1 && (
+                                                <div
+                                                    className="border_div absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[88%] border-b border-gray-300"
+                                                />
+                                            )}
+                                            <div className="right mt-0 cursor-pointer flex gap-1 items-center">
+                                                <HiOutlineMinusCircle className="text-primary"/>
+                                                <button
+                                                    className="text-primary text-[14px]"
+                                                    onClick={() => handleRemoveFile(index)}
+                                                >
+                                                    Remove
+                                                </button>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
 
                                 <div className="modal_body box">
                                     <div className="image-upload mt-4">
                                         <div className="flex items-center justify-center mt-3 w-full">
                                             <label htmlFor="dropzone-file"
-                                                   className="flex flex-col items-center justify-center w-full h-28 border-2 border-blue-300 border-dashed rounded-lg cursor-pointer bg-blue-50 hover:bg-blue-100">
+                                                   className="flex flex-col items-center justify-center w-full h-32 border-2 border-blue-300 border-dashed rounded-lg cursor-pointer bg-blue-50 hover:bg-blue-100">
                                                 <div
                                                     className="flex flex-col items-center justify-center pt-5 pb-6">
                                                     <HiOutlineCloudArrowUp
@@ -137,8 +135,9 @@ const Page = () => {
                                                         className="font-semibold">Click to upload</span> or
                                                         drag and
                                                         drop</p>
-                                                    <p className="text-xs text-gray-500 dark:text-gray-400">
-                                                        Supported file formats: .pdf, .doc, .docx, .txt
+                                                    <p className="text-xs text-center text-gray-500 dark:text-gray-400">
+                                                        You may upload up to 5 PDF, PNG, or JPG files.<br/> Max file
+                                                        size: 5MB
                                                     </p>
                                                 </div>
                                                 <input
@@ -154,11 +153,9 @@ const Page = () => {
                                         </div>
                                     </div>
                                     <div className="input-box mt-3">
-                                        <input
-                                            className="mt-1 rounded w-full pt-4 pb-[50px] px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                            type="text"
-                                            placeholder="You may provide your response here."
-                                        />
+                                        <textarea
+                                            className="mt-1 border-b border-0 rounded w-full pt-4 pb-[27px] px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                            placeholder="You may provide your response here."></textarea>
                                     </div>
                                 </div>
 
