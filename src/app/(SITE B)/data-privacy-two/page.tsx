@@ -144,7 +144,20 @@ const Page = () => {
 
                             {/* Files */}
                             <div
-                                className="box mt-4 rounded rounded-br-none rounded-bl-none flex items-center justify-between bg-white border px-4 py-3">
+                                className="box mt-4 rounded rounded-br-none rounded-bl-none flex items-center justify-between bg-white border border-b-0 px-4 py-3">
+                                <div className="left flex items-center gap-1">
+                                    <ImAttachment size={14} className="text-gray-400"/>
+                                    <h6 className="text-[12px]">
+                                        contract-signed
+                                    </h6>
+                                </div>
+                                <div className="right">
+                                    <button className="text-primary text-[12px]">Download</button>
+                                </div>
+                            </div>
+                            <div className="w-[91%] h-[1px] bg-gray-200 flex items-center justify-center mx-auto"></div>
+                            <div
+                                className="box border-t-0 flex items-center justify-between bg-white border border-b-0 px-4 py-3">
                                 <div className="left flex items-center gap-1">
                                     <ImAttachment size={14} className="text-gray-400"/>
                                     <h6 className="text-[12px]">
@@ -156,17 +169,7 @@ const Page = () => {
                                 </div>
                             </div>
                             <div
-                                className="box border-t-0 flex items-center justify-between bg-white border px-4 py-3">
-                                <div className="left flex items-center gap-1">
-                                    <ImAttachment size={14} className="text-gray-400"/>
-                                    <h6 className="text-[12px]">
-                                        contract-signed
-                                    </h6>
-                                </div>
-                                <div className="right">
-                                    <button className="text-primary text-[12px]">Download</button>
-                                </div>
-                            </div>
+                                className="w-[91%] h-[0.5px] bg-gray-200 flex items-center justify-center mx-auto"></div>
                             <div
                                 className="box border-t-0 rounded-tr-none rounded-tl-none rounded flex items-center justify-between bg-white border px-4 py-3">
                                 <div className="left flex items-center gap-1">
