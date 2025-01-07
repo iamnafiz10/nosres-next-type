@@ -10,7 +10,7 @@ function Page() {
                         <div className="icon">
                             <IoIosCheckmarkCircleOutline className="w-[50px] h-[50px] text-primary"/>
                         </div>
-                        <h4 className="text-prgcolor text-[16px] mt-3">
+                        <h4 className="text-prgcolor text-[16px] font-[500] mt-3">
                             Thank you! Your information has been<br/>
                             successfully submitted!
                         </h4>

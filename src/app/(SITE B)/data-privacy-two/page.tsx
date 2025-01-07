@@ -68,12 +68,12 @@ const Page = () => {
                                                 </thead>
                                                 <tbody>
                                                 <tr className="border-b border-dashed">
-                                                    <td className="px-4 py-2 text-[14px] text-gray-500">
+                                                    <td className="px-4 py-2 text-[14px] text-prgcolor">
                                                         January 3, 2025
                                                     </td>
                                                     <td className="px-4 py-2">
                                                         <button onClick={() => setOpenDocumentModal(true)} type='button'
-                                                                className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-gray-500 py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
+                                                                className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-prgcolor py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
                                                             <span>
                                                                 <LuMessageSquareText size={17}/>
                                                             </span>
@@ -82,12 +82,12 @@ const Page = () => {
                                                     </td>
                                                 </tr>
                                                 <tr className="border-b border-dashed">
-                                                    <td className="px-4 py-2 text-[14px] text-gray-500">
+                                                    <td className="px-4 py-2 text-[14px] text-prgcolor">
                                                         January 3, 2025
                                                     </td>
                                                     <td className="px-4 py-2">
                                                         <button type='button'
-                                                                className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-gray-500 py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
+                                                                className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-prgcolor py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
                                                             <span>
                                                                 <LuMessageSquareText size={17}/>
                                                             </span>
@@ -96,12 +96,12 @@ const Page = () => {
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td className="px-4 py-2 text-[14px] text-gray-500">
+                                                    <td className="px-4 py-2 text-[14px] text-prgcolor">
                                                         January 3, 2025
                                                     </td>
                                                     <td className="px-4 py-2">
                                                         <button type='button'
-                                                                className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-gray-500 py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
+                                                                className="bg-white border rounded hover:bg-[#F0F5FF] hover:border-[#F0F5FF] text-prgcolor py-1 px-4 flex gap-2 items-center justify-center text-[14px]">
                                                             <span>
                                                                 <LuMessageSquareText size={17}/>
                                                             </span>
