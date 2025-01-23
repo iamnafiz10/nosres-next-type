@@ -59,7 +59,7 @@ const Page = () => {
                             <>
                                 <div className="flex flex-col items-start justify-center box">
                                     <div className="wrap">
-                                        <LuShare2 size={80} className="text-primary"/>
+                                        <LuShare2 size={65} className="text-primary"/>
                                     </div>
                                     <h4 className="ml-[5px] text-prgcolor text-[16px] mt-6">
                                         Hi there,
@@ -130,7 +130,7 @@ const Page = () => {
 
                 {/*Footer*/}
                 <div className="footer_wrap mt-8 text-center flex flex-col items-center justify-center">
-                    <div className="flex items-center text-[14px] text-primary">
+                    <div className="flex items-center text-[12px] text-primary">
                         <h4 className="cursor-pointer">Privacy Policy</h4>
                         <LuDot/>
                         <h4 className="cursor-pointer">Terms of Use</h4>
