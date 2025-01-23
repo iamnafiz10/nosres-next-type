@@ -42,6 +42,7 @@ const Page = () => {
         };
     }, []);
 
+    const currentYear = new Date().getFullYear();
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB] flex flex-col items-center justify-center h-screen">
@@ -130,13 +131,13 @@ const Page = () => {
 
                 {/*Footer*/}
                 <div className="footer_wrap mt-8 text-center flex flex-col items-center justify-center">
-                    <div className="flex items-center text-[12px] text-primary">
-                        <h4 className="cursor-pointer">Privacy Policy</h4>
+                    <div className="flex items-center gap-2 text-[12px] text-primary">
+                        <Link href='#' className="cursor-pointer">Privacy Policy</Link>
                         <LuDot/>
-                        <h4 className="cursor-pointer">Terms of Use</h4>
+                        <Link href='#' className="cursor-pointer">Terms of Use</Link>
                     </div>
                     <h4 className="text-gray-500 text-[12px] mt-1">
-                        Copyright © 2025 Nosres Inc. All right reserved.
+                        Copyright © {currentYear} Nosres Inc. All right reserved.
                     </h4>
                 </div>
             </section>
